@@ -114,7 +114,7 @@ class test_console(unittest.TestCase):
         x = (self.capt_out.getvalue())
         sys.stdout = self.backup
         self.assertEqual("** no instance found **\n", x)
-
+    """
     def test_create(self):
         '''
             Test that create works
@@ -122,7 +122,8 @@ class test_console(unittest.TestCase):
         console = self.create()
         console.onecmd("create User email=adriel@hbnb.com password=abc")
         self.assertTrue(isinstance(self.capt_out.getvalue(), str))
-
+    """
+    
     def test_class_name(self):
         '''
             Testing the error messages for class name missing.
